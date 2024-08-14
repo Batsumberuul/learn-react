@@ -1,6 +1,7 @@
 import Box from "../component/box";
 import Round from "../component/round";
 import Backround from "../component/backround";
+import Card from "@/component/profileComponent/card";
 
 function MyComponent() {
   return <div>Hello</div>;
@@ -18,7 +19,7 @@ function Home() {
       <Round text="Round" />
       <Round text="Round" />
       <Box text="box" /> */}
-
+      <Card />
       <Backround />
     </div>
   );
