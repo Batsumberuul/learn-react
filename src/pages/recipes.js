@@ -1,3 +1,8 @@
+import Steps from "../component/steps";
+import { FishSteps } from "@/component/fishsteps";
+import { FishList } from "@/component/fishList";
+import { List } from "@/component/list";
+
 let ingredients = [
   { name: "Salmon", amount: 1, measurement: "l lb" },
   { name: "Pine Nuts", amount: 1, measurement: "cup" },
@@ -29,22 +34,22 @@ let fishsteps = [
   "Top them with lettuce, tomatoes, and cheese",
 ];
 
-const List = (props) => {
-  const { name } = props;
-  return <li>{name}</li>;
-};
-const Steps = (props) => {
-  const { text } = props;
-  return <p>{text}</p>;
-};
-const FishList = (props) => {
-  const { fishName } = props;
-  return <li>{fishName}</li>;
-};
-const FishSteps = (props) => {
-  const { fishText } = props;
-  return <p>{fishText}</p>;
-};
+// const List = (props) => {
+//   const { name } = props;
+//   return <li>{name}</li>;
+// };
+// const Steps = (props) => {
+//   const { text } = props;
+//   return <p>{text}</p>;
+// };
+// const FishList = (props) => {
+//   const { fishName } = props;
+//   return <li>{fishName}</li>;
+// };
+// const FishSteps = (props) => {
+//   const { fishText } = props;
+//   return <p>{fishText}</p>;
+// };
 
 function RecipesPage(props) {
   return (
