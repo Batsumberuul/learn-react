@@ -1,0 +1,13 @@
+.backstyle {
+  display: flex;
+  flex-direction: column;
+}
+.tittle {
+  display: flex;
+}
+.body {
+  display: flex;
+}
+.img {
+  width: 25%;
+}
