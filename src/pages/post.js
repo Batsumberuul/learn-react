@@ -1,7 +1,6 @@
-import PostComponent from "../component/postComponent";
 import styles from "../component/postBackstyle.module.css";
-import PostTittle from "@/component/postTittle";
-import PostImg from "@/component/postImg";
+
+import PostLastComponent from "../component/postComponentLast";
 
 let postdatas = [
   {
@@ -34,21 +33,15 @@ let postdatas = [
 function Post(props) {
   return (
     <div className={styles.backstyle}>
-      <div className={styles.imgdiv}>
-        {postdatas.map((value, index) => (
-          <img className={styles.img} key={index} src="/cat.webp" />
-        ))}
-      </div>
-      <div className={styles.tittle}>
-        {postdatas.map((postdata, id) => {
-          return <PostTittle key={id} text={postdata.title} />;
-        })}
-      </div>
-      <div className={styles.body}>
-        {postdatas.map((postdata, id) => {
-          return <PostComponent key={id} text={postdata.body} />;
-        })}
-      </div>
+      {postdatas.map((postdata, id) => {
+        return (
+          <PostLastComponent
+            key={id}
+            text={postdata.title}
+            body={postdata.body}
+          />
+        );
+      })}
     </div>
   );
 }

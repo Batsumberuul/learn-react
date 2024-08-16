@@ -75,3 +75,21 @@ function RecipesPage(props) {
   );
 }
 export default RecipesPage;
+
+const list = [
+  {
+    name: "Car",
+    cats: [1, 23],
+  },
+];
+
+list.map((item) => {
+  return (
+    <div>
+      <p>{item.name}</p>
+      {item.cats.map((cat) => {
+        return <p>{cat}</p>;
+      })}
+    </div>
+  );
+});

@@ -1,4 +1,7 @@
-const data = [
+import { LastSalmon } from "@/component/ last";
+import { FishSteps } from "@/component/fishsteps";
+
+const datas = [
   {
     name: "Baked Salmon",
     ingredients: [
@@ -38,9 +41,27 @@ function RecipesPage() {
   return (
     <div>
       <h1>Delicious Recipes</h1>
-      <h3>Baked Salmon</h3>
-      {}
+      {datas.map((item) => {
+        return <p>{item.name}</p>;
+      })}
     </div>
   );
 }
 export default RecipesPage;
+const list = [
+  {
+    name: "Car",
+    cats: [1, 23],
+  },
+];
+
+list.map((item) => {
+  return (
+    <div>
+      <p>{item.name}</p>
+      {item.cats.map((cat) => {
+        return <p>{cat}</p>;
+      })}
+    </div>
+  );
+});
